@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('https://fonts.google.com/specimen/Bai+Jamjuree')
+    format('truetype');
+    font-weight: 400 600;
+}
+:root{
+    --font-family-default: 'Bai Jamjuree';
+}
+.header .first{
+    text-align: center;
+    background-image: url(../images/bg-header-desktop.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.header .first h1,.second-section .text h1,.third-section .row .text h1,
+.fourth-section .text h1,.fifth-section .row .text h1,.sixth-section .row h1,.eighth .row .first h1{
+    color:hsl(210, 10%, 33%);
+    padding: 10px;
+    text-align: center;
+}
+.header .first p,.second-section .text p,.third-section .row .text p,
+.fourth-section .text p,.fifth-section .row .text p,.sixth-section .row p
+,.eighth .row .first p{
+    color: hsl(210, 10%, 33%);
+    opacity: 0.6;
+    width: 45%;
+    margin: auto;
+    padding: 20px;
+}
+.second-section .text p{
+    text-align: center;
+}
+.header .first button,.eighth .row .first button{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    outline: none;
+    border:none;
+    border-radius:30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+}
+.header .first .ios,.eighth .row .first .ios{
+background:hsl(171, 66%, 44%) ;
+}
+.header .first .mac,.eighth .row .first .mac {
+    background: hsl(233, 100%, 69%);
+}
+.third-section {
+    position: relative;
+    height: 600px;
+}
+.third-section .row img{
+    position: absolute;
+    right: 58%;
+}
+.third-section .row .text{
+position: absolute;
+right: 20%;
+}
+.fourth-section{
+    position: relative;
+}
+.fourth-section .text{
+    text-align: center;
+}
+.fourth-section .big-img  img{
+    margin-left: 122px;
+}
+.fifth-section .row .text{
+    text-align: center;
+}
+.sixth-section .row{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sixth-section .row .image{
+text-align: center;
+}
+.eighth{
+    margin: 20px;
+}
+.eighth .row .first div{
+display: flex;
+justify-content: centers;
+}
+@media only screen and (min-width:0px) and (max-width:766px){
+    .third-section .row .text{
+        position: absolute;
+        left: 20%;
+        width: 80%;
+        font-size: 15px;
+        }
+        .third-section .row .text p{
+            font-size: 15px;
+            }
+        .fourth-section .big-img  img{
+            width: 350px;
+        }
+        
+}
